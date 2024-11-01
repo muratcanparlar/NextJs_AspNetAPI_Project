@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "@hookform/resolvers": "^3.9.1",
+    "jwt-decode": "^4.0.0",
+    "next": "15.0.2",
+    "next-auth": "^5.0.0-beta.25",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

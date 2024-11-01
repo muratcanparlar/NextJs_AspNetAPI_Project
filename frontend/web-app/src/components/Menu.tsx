@@ -1,6 +1,9 @@
 "use server";
 import Image from "next/image";
 import Link from "next/link";
+import { auth, signOut } from "@/auth";
+import { hasUserAccess } from "@/utils/authHelper";
+import LogoutButton from "@/components/LogoutButton";
 
 const menuItems = [
   {
@@ -70,6 +73,8 @@ const menuItems = [
 ];
 
 const Menu = async () => {
+  const session = await auth();
+  const loggedInUser = session?.user;
   return (
     <div className="mt-4 text-sm">
       {menuItems.map((i) => (
@@ -78,7 +83,7 @@ const Menu = async () => {
             {i.title}
           </span>
           {i.items.map((item) => {
-            return (
+            return hasUserAccess(loggedInUser, item.visible) ? (
               <Link
                 href={item.href}
                 key={item.label}
@@ -87,10 +92,11 @@ const Menu = async () => {
                 <Image src={item.icon} alt="" width={20} height={20} />
                 <span className="hidden lg:block">{item.label}</span>
               </Link>
-            );
+            ) : null;
           })}
         </div>
       ))}
+      <LogoutButton />
     </div>
   );
 };
