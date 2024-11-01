@@ -1,6 +1,8 @@
 # Next.js & ASP.NET API Project
 
-This repository is an example of an integrated project using Next.js for the frontend and ASP.NET for the backend API. The goal is to showcase a clean architecture for a scalable web application with a strong separation of concerns.
+Goal: Authenticate a Next.js project with Keycloak using credentials.
+
+This repository demonstrates an integrated project using Next.js for the frontend and ASP.NET for the backend API, aiming to showcase a clean architecture for a scalable web application with a strong separation of concerns. The goal is to implement the Keycloak authentication process for secure user login and role-based access control.
 
 ## Project Structure
 
