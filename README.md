@@ -4,8 +4,8 @@ This repository is an example of an integrated project using Next.js for the fro
 
 ## Project Structure
 
-- **Frontend**: Built using Next.js, housed in the `client` directory.
-- **Backend**: ASP.NET API, located in the `api` directory.
+- **Frontend**: Built using Next.js, housed in the `frontend` directory.
+- **Backend**: ASP.NET API, located in the `backend` directory.
 - **Shared**: Any shared resources or configurations.
 
 ## Features
