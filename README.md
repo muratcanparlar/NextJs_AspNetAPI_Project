@@ -13,6 +13,10 @@ This repository is an example of an integrated project using Next.js for the fro
 - Role-based folder structure in the frontend.
 - Initial components like Menu and Navbar.
 - Skeleton structure for the frontend application.
+- Integration with Keycloak for authentication.
+- Token retrieval and refresh functionality.
+- Login via credentials.
+- Role-based authentication on the frontend.
 
 ## Getting Started
 
@@ -59,10 +63,6 @@ This repository is an example of an integrated project using Next.js for the fro
 
 Stay tuned for exciting new features including:
 
-- Integration with Keycloak for authentication.
-- Token retrieval and refresh functionality.
-- Login via credentials.
-- Role-based authentication on the frontend.
 - Integration with ASP.NET Web API to fetch data post-authentication.
 
 Keep checking back for updates and improvements!
