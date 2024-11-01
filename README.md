@@ -35,13 +35,13 @@ This repository is an example of an integrated project using Next.js for the fro
 
 2. **Navigate to the frontend directory and install dependencies**:
     ```sh
-    cd client
+    cd frontend/web-app
     npm install
     ```
 
 3. **Navigate to the backend directory and restore dependencies**:
     ```sh
-    cd ../api
+    cd ../backend/
     dotnet restore
     ```
 
@@ -55,7 +55,7 @@ This repository is an example of an integrated project using Next.js for the fro
 
 2. **Start the frontend development server**:
     ```sh
-    cd client
+    cd frontend/web-api
     npm run dev
     ```
 
