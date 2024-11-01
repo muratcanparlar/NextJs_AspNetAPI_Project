@@ -1,0 +1,38 @@
+﻿version: '3.9'
+
+services:
+  edutrack.identity:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: EduTrack.Identity
+    command: start-dev #--import-realm
+    environment:
+      - KC_HEALTH_ENABLED=true
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KC_DB=postgres
+      - KC_DB_URL=jdbc:postgresql://edutrack-db:5432/keycloak
+      - KC_DB_USERNAME=postgres
+      - KC_DB_PASSWORD=postgrespw
+    volumes:
+      - ./.containers/identity:/opt/keycloak/data
+      - ./.files:/opt/keycloak/data/import
+    ports:
+      - 18080:8080
+    depends_on:
+      - edutrack-db
+
+  edutrack-db:
+    image: postgres:latest
+    container_name: EduTrack.DB
+    environment:
+      - POSTGRES_DB=keycloak
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    ports:
+      - 4040:5432
+
+  
+
+  
