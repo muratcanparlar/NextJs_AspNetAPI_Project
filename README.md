@@ -4,6 +4,8 @@ Goal: Authenticate a Next.js project with Keycloak using credentials.
 
 This repository demonstrates an integrated project using Next.js for the frontend and ASP.NET for the backend API, aiming to showcase a clean architecture for a scalable web application with a strong separation of concerns. The goal is to implement the Keycloak authentication process for secure user login and role-based access control.
 
+Check out my detailed [Next.js and ASP.NET Core Integration Guide with Keycloak](https://medium.com/@canparlar_92059/nextjs-and-asp-net-core-integration-guide-with-keycloak-5226780cab54) on Medium for an 
+
 ## Project Structure
 
 - **Frontend**: Built using Next.js, housed in the `frontend` directory.
