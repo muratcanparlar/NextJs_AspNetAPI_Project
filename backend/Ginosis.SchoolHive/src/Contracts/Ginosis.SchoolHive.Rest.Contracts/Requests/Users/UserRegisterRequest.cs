@@ -1,5 +1,5 @@
 ﻿namespace Ginosis.SchoolHive.Rest.Contracts.Requests.Users;
-public class UserRegister
+public class UserRegisterRequest
 {
     public Guid Id { get; set; }
     public string FirstName { get; set; }
