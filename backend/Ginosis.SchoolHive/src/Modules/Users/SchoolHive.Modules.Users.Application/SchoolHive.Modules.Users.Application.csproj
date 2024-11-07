@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
+    <ProjectReference Include="..\..\..\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
     <ProjectReference Include="..\SchoolHive.Modules.Users.Domain\SchoolHive.Modules.Users.Domain.csproj" />
   </ItemGroup>
 

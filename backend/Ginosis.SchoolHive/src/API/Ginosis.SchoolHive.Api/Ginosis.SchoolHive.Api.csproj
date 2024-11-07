@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
+    <ProjectReference Include="..\..\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
     <ProjectReference Include="..\..\Common\Ginosis.Common.Presentation\Ginosis.Common.Presentation.csproj" />
     <ProjectReference Include="..\..\Contracts\Ginosis.SchoolHive.Rest.Contracts\Ginosis.SchoolHive.Rest.Contracts.csproj" />
     <ProjectReference Include="..\..\Modules\Users\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj" />

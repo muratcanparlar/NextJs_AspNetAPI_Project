@@ -11,21 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{A84D7CB6-239
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{7B081E72-AF3D-4542-99BE-D83717D96CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ginosis.SchoolHive.Api", "src\API\Ginosis.SchoolHive.Api\Ginosis.SchoolHive.Api.csproj", "{FAD23F6B-1C8A-44E1-B0E7-454F358EBE4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.SchoolHive.Api", "src\API\Ginosis.SchoolHive.Api\Ginosis.SchoolHive.Api.csproj", "{FAD23F6B-1C8A-44E1-B0E7-454F358EBE4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolHive.Modules.Users.Domain", "src\Modules\Users\SchoolHive.Modules.Users.Domain\SchoolHive.Modules.Users.Domain.csproj", "{CCB05685-5101-4047-B5A0-DC7207872155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolHive.Modules.Users.Domain", "src\Modules\Users\SchoolHive.Modules.Users.Domain\SchoolHive.Modules.Users.Domain.csproj", "{CCB05685-5101-4047-B5A0-DC7207872155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolHive.Modules.Users.Application", "src\Modules\Users\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj", "{5B0A8C2F-F2C2-4C68-8554-E8C059D28446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolHive.Modules.Users.Application", "src\Modules\Users\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj", "{5B0A8C2F-F2C2-4C68-8554-E8C059D28446}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{097110DA-655D-4DB5-8376-6D7E30328A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ginosis.SchoolHive.Rest.Contracts", "src\Contracts\Ginosis.SchoolHive.Rest.Contracts\Ginosis.SchoolHive.Rest.Contracts.csproj", "{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.SchoolHive.Rest.Contracts", "src\Contracts\Ginosis.SchoolHive.Rest.Contracts\Ginosis.SchoolHive.Rest.Contracts.csproj", "{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A7E5AFD5-B08F-4520-B793-C82F7D468F80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ginosis.Common.Application", "Ginosis.Common.Application\Ginosis.Common.Application.csproj", "{BA952259-5F48-4B64-B7B1-BD797CC7D827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.Common.Presentation", "src\Common\Ginosis.Common.Presentation\Ginosis.Common.Presentation.csproj", "{DED7F171-A546-4863-BC97-4F0DF69BA7BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ginosis.Common.Presentation", "src\Common\Ginosis.Common.Presentation\Ginosis.Common.Presentation.csproj", "{DED7F171-A546-4863-BC97-4F0DF69BA7BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.Common.Application", "src\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj", "{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +49,14 @@ Global
 		{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA952259-5F48-4B64-B7B1-BD797CC7D827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA952259-5F48-4B64-B7B1-BD797CC7D827}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA952259-5F48-4B64-B7B1-BD797CC7D827}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA952259-5F48-4B64-B7B1-BD797CC7D827}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,8 +71,8 @@ Global
 		{097110DA-655D-4DB5-8376-6D7E30328A56} = {DD9BF834-C052-4D6A-A077-F73202DDA4E8}
 		{50A8EC4C-2C36-4CBF-9559-31B1F3F57F08} = {097110DA-655D-4DB5-8376-6D7E30328A56}
 		{A7E5AFD5-B08F-4520-B793-C82F7D468F80} = {DD9BF834-C052-4D6A-A077-F73202DDA4E8}
-		{BA952259-5F48-4B64-B7B1-BD797CC7D827} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
+		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A45B048-5C69-4592-A6C8-F6357AE055AD}

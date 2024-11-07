@@ -1,4 +1,5 @@
-﻿using Ginosis.Common.Application;
+﻿
+using Ginosis.Common.Application;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

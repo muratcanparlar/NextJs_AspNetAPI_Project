@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
+    <ProjectReference Include="..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
   </ItemGroup>
 
 </Project>
