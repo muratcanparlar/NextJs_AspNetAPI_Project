@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
+    <ProjectReference Include="..\..\Common\Ginosis.Common.Presentation\Ginosis.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Contracts\Ginosis.SchoolHive.Rest.Contracts\Ginosis.SchoolHive.Rest.Contracts.csproj" />
+    <ProjectReference Include="..\..\Modules\Users\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj" />
   </ItemGroup>
 
 </Project>
