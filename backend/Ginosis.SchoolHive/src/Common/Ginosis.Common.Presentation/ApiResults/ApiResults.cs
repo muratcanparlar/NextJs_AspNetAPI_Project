@@ -20,7 +20,7 @@ namespace Ginosis.Common.Presentation.ApiResults;
             Status = GetStatusCode(result.Error.Type),
             Title = GetTitle(result.Error),
             Type = GetType(result.Error.Type),
-            //Extensions = GetErrors(result)
+            Extensions = GetErrors(result)
         };
 
         return new ObjectResult(problemDetails)
@@ -69,17 +69,17 @@ namespace Ginosis.Common.Presentation.ApiResults;
             _ => StatusCodes.Status500InternalServerError
         };
 
-    //private static Dictionary<string, object?>? GetErrors(Result result)
-    //{
-        //if (result.Error is not ValidationError validationError)
-        //{
-        //    return null;
-        //}
+    private static Dictionary<string, object?>? GetErrors(Result result)
+    {
+        if (result.Error is not ValidationError validationError)
+        {
+            return null;
+        }
 
-        //return new Dictionary<string, object?>
-        //{
-        //    { "errors", validationError.Errors }
-        //};
-    //}
+        return new Dictionary<string, object?>
+        {
+            { "errors", validationError.Errors }
+        };
+    }
 }
 
