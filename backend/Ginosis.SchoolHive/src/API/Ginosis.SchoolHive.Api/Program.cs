@@ -1,5 +1,6 @@
 using Ginosis.Common.Application;
 using Ginosis.Common.Application.Behaviors;
+using Ginosis.Common.Infrastructure;
 using Ginosis.SchoolHive.Api.Middleware;
 using SchoolHive.Modules.Users.Application;
 
@@ -23,6 +24,8 @@ builder.Services.AddApplication([AssemblyReference.Assembly]);
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
+builder.Services.AddInfrastructure();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,7 +37,10 @@ if (app.Environment.IsDevelopment())
 app.UseExceptionHandler();
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
 
 app.MapControllers();
 

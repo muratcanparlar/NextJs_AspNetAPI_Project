@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.Common.Presentation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ginosis.Common.Application", "src\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj", "{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ginosis.Common.Infrastructure", "src\Common\Ginosis.Common.Infrastructure\Ginosis.Common.Infrastructure.csproj", "{F589CADD-D6DD-463D-8E5E-571D09204DEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F589CADD-D6DD-463D-8E5E-571D09204DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F589CADD-D6DD-463D-8E5E-571D09204DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F589CADD-D6DD-463D-8E5E-571D09204DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F589CADD-D6DD-463D-8E5E-571D09204DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{A7E5AFD5-B08F-4520-B793-C82F7D468F80} = {DD9BF834-C052-4D6A-A077-F73202DDA4E8}
 		{DED7F171-A546-4863-BC97-4F0DF69BA7BB} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
 		{F6668AE0-6580-4C6B-9DEA-3BEC03DB19B9} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
+		{F589CADD-D6DD-463D-8E5E-571D09204DEF} = {A7E5AFD5-B08F-4520-B793-C82F7D468F80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A45B048-5C69-4592-A6C8-F6357AE055AD}
