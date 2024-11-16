@@ -18,6 +18,7 @@
     <ProjectReference Include="..\..\Common\Ginosis.Common.Presentation\Ginosis.Common.Presentation.csproj" />
     <ProjectReference Include="..\..\Contracts\Ginosis.SchoolHive.Rest.Contracts\Ginosis.SchoolHive.Rest.Contracts.csproj" />
     <ProjectReference Include="..\..\Modules\Users\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj" />
+    <ProjectReference Include="..\..\Modules\Users\SchoolHive.Modules.Users.Infrastructure\SchoolHive.Modules.Users.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

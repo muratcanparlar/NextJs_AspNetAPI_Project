@@ -15,7 +15,7 @@ internal class Program
 
         var configuration = builder.Build();
 
-        var connectionString = configuration["SchoolHiveDB"];
+        var connectionString = configuration["Database"];
 
         var upgrader =
             DeployChanges.To

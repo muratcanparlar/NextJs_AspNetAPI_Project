@@ -3,6 +3,7 @@ using Ginosis.Common.Application.Behaviors;
 using Ginosis.Common.Infrastructure;
 using Ginosis.SchoolHive.Api.Middleware;
 using SchoolHive.Modules.Users.Application;
+using SchoolHive.Modules.Users.Infrastructure;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,10 @@ builder.Services.AddMediatR(config =>
     config.RegisterServicesFromAssemblies(AssemblyReference.Assembly);
     config.AddOpenBehavior(typeof(ValidationPipelineBehavior<,>));
 });
+
+string databaseConnectionString = builder.Configuration.GetConnectionString("Database")!;
+
+builder.Services.AddUsersModule(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

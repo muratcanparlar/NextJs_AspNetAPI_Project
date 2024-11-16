@@ -6,7 +6,20 @@ public class User
     public string Email { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public Guid UserProviderId { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public Guid IdentityId { get; set; }
+
+    public static User Create(string email, string firstName, string lastName, Guid identityId)
+    {
+        return new User
+        {
+            Email = email,
+            FirstName = firstName,
+            LastName = lastName,
+            CreatedDate = DateTime.UtcNow,
+            IdentityId = identityId
+        };
+    }
 
 }
 
