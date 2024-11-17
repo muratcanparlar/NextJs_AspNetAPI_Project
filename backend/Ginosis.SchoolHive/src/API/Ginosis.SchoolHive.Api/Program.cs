@@ -1,6 +1,7 @@
 using Ginosis.Common.Application;
 using Ginosis.Common.Application.Behaviors;
 using Ginosis.Common.Infrastructure;
+using Ginosis.SchoolHive.Api.Extensions;
 using Ginosis.SchoolHive.Api.Middleware;
 using SchoolHive.Modules.Users.Application;
 using SchoolHive.Modules.Users.Infrastructure;
@@ -30,6 +31,8 @@ builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
 builder.Services.AddInfrastructure();
+
+builder.Configuration.AddModuleConfiguration(["users"]);
 
 var app = builder.Build();
 

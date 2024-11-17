@@ -9,11 +9,13 @@
   <ItemGroup>
     <PackageReference Include="EFCore.NamingConventions" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
+    <ProjectReference Include="..\SchoolHive.Modules.Users.Application\SchoolHive.Modules.Users.Application.csproj" />
     <ProjectReference Include="..\SchoolHive.Modules.Users.Domain\SchoolHive.Modules.Users.Domain.csproj" />
   </ItemGroup>
 

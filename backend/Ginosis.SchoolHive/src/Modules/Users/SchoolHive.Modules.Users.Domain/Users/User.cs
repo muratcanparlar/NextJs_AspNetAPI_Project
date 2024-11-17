@@ -7,9 +7,9 @@ public class User
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public DateTime CreatedDate { get; set; }
-    public Guid IdentityId { get; set; }
+    public string IdentityId { get; set; }
 
-    public static User Create(string email, string firstName, string lastName, Guid identityId)
+    public static User Create(string email, string firstName, string lastName, string identityId)
     {
         return new User
         {

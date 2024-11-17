@@ -1,0 +1,11 @@
+{
+  "Users": {
+    "KeyCloak": {
+      "AdminUrl": "http://localhost:18080/admin/realms/ginosis/",
+      "TokenUrl": "http://localhost:18080/realms/ginosis/protocol/openid-connect/token",
+      "ConfidentialClientId": "ginosis-confidential-client",
+      "ConfidentialClientSecret": "AApVyTgW45RYsw8M3QRH9bCHNxjV1wpC",
+      "PublicClientId": "ginosis-public-client"
+    }
+  }
+}
