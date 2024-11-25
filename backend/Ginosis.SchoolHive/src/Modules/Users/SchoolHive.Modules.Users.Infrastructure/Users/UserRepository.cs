@@ -7,6 +7,10 @@ internal class UserRepository(UsersDbContext usersDbContext) : IUserRepository
 {
     public void Insert(User user)
     {
+        foreach (Role role in user.Roles)
+        {
+            usersDbContext.Attach(role);
+        }
         usersDbContext.Add(user);
     }
 }

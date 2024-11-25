@@ -7,15 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Users\GetUser\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
     <ProjectReference Include="..\..\..\Common\Ginosis.Common.Application\Ginosis.Common.Application.csproj" />
     <ProjectReference Include="..\SchoolHive.Modules.Users.Domain\SchoolHive.Modules.Users.Domain.csproj" />
   </ItemGroup>

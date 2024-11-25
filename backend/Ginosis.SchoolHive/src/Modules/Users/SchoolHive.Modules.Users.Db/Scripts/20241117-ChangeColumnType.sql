@@ -1,2 +1,0 @@
-﻿ALTER TABLE users
-ALTER COLUMN identity_id TYPE VARCHAR(50)

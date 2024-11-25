@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Scripts\20241117-ChangeColumnType.sql" />
+    <None Remove="Scripts\20241121-CreateUsersRolesPermisionsTable.sql" />
   </ItemGroup>
 
   <ItemGroup>

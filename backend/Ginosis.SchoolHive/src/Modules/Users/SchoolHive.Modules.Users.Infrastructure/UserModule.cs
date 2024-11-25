@@ -1,4 +1,5 @@
 ﻿using Evently.Modules.Users.Infrastructure.Identity;
+using Ginosis.Common.Application.Authorization;
 using Ginosis.Common.Application.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using SchoolHive.Modules.Users.Application.Abstractions.Identity;
 using SchoolHive.Modules.Users.Domain.Users;
+using SchoolHive.Modules.Users.Infrastructure.Authorization;
 using SchoolHive.Modules.Users.Infrastructure.Databaase;
 using SchoolHive.Modules.Users.Infrastructure.Identity;
 using SchoolHive.Modules.Users.Infrastructure.Users;
@@ -23,8 +25,10 @@ namespace SchoolHive.Modules.Users.Infrastructure
         }
         private static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<KeyCloakOptions>(options => configuration.GetSection("Users:KeyCloak").Bind(options));
 
+            services.AddScoped<IPermissionService, PermissionService>();
+
+            services.Configure<KeyCloakOptions>(options => configuration.GetSection("Users:KeyCloak").Bind(options));
 
             services.AddTransient<KeyCloakAuthDelegatingHandler>();
 

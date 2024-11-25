@@ -30,7 +30,7 @@ builder.Services.AddApplication([AssemblyReference.Assembly]);
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
-builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure(databaseConnectionString);
 
 builder.Configuration.AddModuleConfiguration(["users"]);
 
